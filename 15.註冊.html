@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <form method="get" action="registration.php">
+        姓名：<input type="text" name="name"><br>
+        性別：<input type="radio" name="gender" value="M">男
+             <input type="radio" name="gender" value="F">女
+             <input type="radio" name="gender" value="N">無法透漏 <br>
+        興趣：<input type="checkbox" name="interest" value="tv" checked>看電視
+             <input type="checkbox" name="interest" value="fish">釣魚
+             <input type="checkbox" name="interest" value="movie" checked>看電影<br>
+        居住地：<select name="county">
+              <option value="Hsinchu">新竹</option>
+              <option value="Taoyuan" selected>桃園</option>
+              <option value="Miaoli">苗栗</option>
+        </select> <br>
+	自傳：<br>
+        <textarea name="autobiography" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="註冊"> 
+        <input type="reset" value="清除">
+
+        </form>
+    </body>
+</html>
+
+
+<!-- 文件主體 <BODY></BODY> -->
+
+<!-- 表單 <FORM METHOD=get、post ACTION=UTL>	…	</FORM> -->
+
+<!-- 文字欄位 <INPUT TYPE=text> -->
+
+<!-- 換行 <BR> -->
+
+<!-- 單一選項欄位(圓) <INPUT TYPE=radio NAME=名稱 VALUE=給CGI程式參考的值> -->
+
+<!-- 文字欄位 內定值 VALUE=預設文字 -->
+
+<!-- 多選項欄位(方) <INPUT TYPE=checkbox NAME=名稱 VALUE=給CGI程式參考的值> -->
+
+<!-- 預設勾選 CHECKED || 無作用(灰色) DISABLED -->
+
+<!-- 清單欄位 <SELECT NAME=名 SIZE=多少選項的高度>	<OPTION VALUE=選項值 SELECTED>選項文字</OPTION>		…	</SELECT> -->
+
+<!-- 多行文字區 <TEXTAREA COLS=長度 ROWS=寬度(單位是列)>預設文字</TEXTAREA> -->
